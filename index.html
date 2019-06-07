@@ -1,0 +1,435 @@
+﻿<!DOCTYPE html>
+<html>
+    <script type="text/javascript">
+        function showDetail(ChangeElem) { 
+          var elem = document.getElementById(ChangeElem);
+         if(elem.style.visibility=="hidden") {
+          elem.style.visibility="visible";
+           return false;
+         }
+         if(elem.style.visibility=="visible") {
+          elem.style.visibility="hidden";
+          return false;
+         }
+        }
+ </script>
+        
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="height=device-height, initial-scale=1, maximum-scale=1" />
+    <title>Road Manager</title>
+    <link rel="stylesheet" type="text/css" href="static/index.css" />
+</head>
+<body>
+    <header id="header">
+        <div>
+            <span class="header-title">Road Manager</span>
+        </div>
+    </header>
+
+    <section id="category">
+        <!-- <div class="category-title-wrapper">
+            <p class="category-title">Category</p>
+        </div> -->
+
+        <div class="category-foods">
+            <ul class="category-food-list">
+                 <li class="category-food">
+                    <div class="food-item">
+                        <a href="#" onclick="showDetail('detail_korean')" title=""><img src="static/korean.png"  class="food-image"/></a>
+                        <span>Korean</span>
+                    </div>
+                    <div id="detail_korean" style="position:absolute; left:200px; top:100px; visibility:hidden;">
+                        <div id="kor_A1">
+                            <img onclick="showDetail('detail_korean_icon_A1')" style="position:relative; left:13px; top:285px; cursor: pointer;" src="static/14.png" width="20px" height="20px" alt="" />
+                            <div id="detail_korean_icon_A1" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img onclick="showDetail('detail_korean_path_A1')" style="cursor: pointer;" src="static/detail.png" width="200px" height="100px" alt="" />
+                                <div id="detail_korean_path_A1" style="position:fixed; left:-10px; top:367px; visibility:hidden;">
+                                    <svg id="svg">
+                                        <path stroke-width='5' fill='none' stroke="#F00" d="M 232,0 L 245,23 240,26" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="kor_A2">
+                            <img onclick="showDetail('detail_korean_icon_A2')" style="position:relative; left:-25px; top:300px; cursor: pointer;" src="static/치킨.png" width="20px" height="20px" alt="" />
+                            <div id="detail_korean_icon_A2" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img onclick="showDetail('detail_korean_path_A2')" style="cursor: pointer;" src="static/우리안숯불바베큐 복사.png" width="200px" height="100px" alt="" />
+                                <div id="detail_korean_path_A2" style="position:fixed; left:-10px; top:367px; visibility:hidden;">
+                                    <svg id="svg">
+                                        <path stroke-width='5' fill='none' stroke="#F00" d="M 232,0 L 268,65 235,75 206,80 203,73" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="kor_A3">
+                          <img onclick="showDetail('detail_korean_icon_A3')" style="position:relative; left:60px; top:314px; cursor: pointer;" src="static/11.png" width="20px" height="20px" alt="" />
+                            <div id="detail_korean_icon_A3" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img onclick="showDetail('detail_korean_path_A3')" style="cursor: pointer;" src="static/해물나라 복사.png" width="200px" height="100px" alt="" />
+                                <div id="detail_korean_path_A3" style="position:fixed; left:-10px; top:367px; visibility:hidden;">
+                                    <svg id="svg">
+                                        <path stroke-width='5' fill='none' stroke="#F00" d="M 232,0 L 293,104 285,109" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="kor_A4">
+                          <img onclick="showDetail('detail_korean_icon_A4')" style="position:relative; left:25px; top:290px; cursor: pointer;" src="static/꼬기.png" width="20px" height="20px" alt="" />
+                            <div id="detail_korean_icon_A4" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img onclick="showDetail('detail_korean_path_A4')" style="cursor: pointer;" src="static/소담집 복사.png" width="200px" height="100px" alt="" />
+                                <div id="detail_korean_path_A4" style="position:fixed; left:-10px; top:367px; visibility:hidden;">
+                                    <svg id="svg">
+                                        <path stroke-width='5' fill='none' stroke="#F00" d="M 232,0 L 293,104 285,109 250,117" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="kor_A5">
+                          <img onclick="showDetail('detail_korean_icon_A5')" style="position:relative; left:42px; top:290px; cursor: pointer;" src="static/닭한마리.png" width="20px" height="20px" alt="" />
+                            <div id="detail_korean_icon_A5" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img onclick="showDetail('detail_korean_path_A5')" style="cursor: pointer;" src="static/닭한마리 복사.png" width="200px" height="100px" alt="" />
+                                <div id="detail_korean_path_A5" style="position:fixed; left:70px; top:367px; visibility:hidden;">
+                                    <svg id="svg">
+                                        <path stroke-width='5' fill='none' stroke="#F00" d="M 152,0 L 225,128 210,132 214,139 185,144"/>
+                                    </svg>
+                                </div>    
+                            </div>
+                        </div>
+
+                        <div id="kor_A6">
+                            <img onclick="showDetail('detail_korean_icon_A6')" style="position:relative; left:95px; top:300px; cursor: pointer;" src="static/14.png" width="20px" height="20px" alt="" />
+                              <div id="detail_korean_icon_A6" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                  <img onclick="showDetail('detail_korean_path_A6')" style="cursor: pointer;" src="static/필동면옥 복사.png" width="200px" height="100px" alt="" />
+                                  <div id="detail_korean_path_A6" style="position:fixed; left:70px; top:367px; visibility:hidden;">
+                                      <svg id="svg" width="300px" height="500px">
+                                          <path stroke-width='5' fill='none' stroke="#F00" d="M 152,0 L 245,162 240,165"/>
+                                      </svg>
+                                  </div>    
+                              </div>
+                          </div>
+                        
+                        <div id="kor_B1">
+                          <img onclick="showDetail('detail_korean_icon_B1')" style="position:relative; left:100px; top:370px; cursor: pointer;" src="static/14.png" width="20px" height="20px" alt="" />
+                            <div id="detail_korean_icon_B1" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                              <img src="static/솜이네떡볶이 복사.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+                        
+                        <div id="kor_E1">
+                          <img onclick="showDetail('detail_korean_icon_E1')" style="position:relative; left:-115px; top:400px; cursor: pointer;" src="static/korean.png" width="20px" height="20px" alt="" />
+                            <div id="detail_korean_icon_E1" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                              <img src="static/설빙 복사.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                 </li>
+
+                <li class="category-food">
+                    <div class="food-item">
+                        <a href="#" onclick="showDetail('detail_western')" title=""><img src="static/western.png"  class="food-image"/></a>
+                        <span>Western</span>
+                    </div>
+
+                    <div id="detail_western" style="position:absolute; left:200px; top:400px; visibility:hidden;">
+                        <div id="wes_C1">
+                            <img onclick="showDetail('detail_western_icon_C1')" style="position: relative; left:5px; top:220px; cursor: pointer;" src="static/western.png" width="20px" height="20px" alt="" />
+                            <div id="detail_western_icon_C1" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img src="static/닭한마리 복사.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+                        
+                        <div id="wes_E1">
+                            <img onclick="showDetail('detail_western_icon_E1')" style="position: relative; left:-70px;top:285px; cursor: pointer;" src="static/western.png" width="20px" height="20px" alt="" />
+                            <div id="detail_western_icon_E1" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img src="static/두끼 복사.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="category-food">
+                    <div class="food-item">
+                        <a href="#" onclick="showDetail('detail_chinese')" title=""><img src="static/chinese.png"  class="food-image"/></a>
+                        <span>Chinese</span>
+                    </div>
+
+                    <div id="detail_chinese" style="position:absolute; left:30px; top:500px; visibility:hidden;">
+                        <div id="chi_B1">
+                            <img onclick="showDetail('detail_chinese_icon_B1')" style="position:absolute; left:140px; top:-30px; cursor: pointer;" src="static/양꼬치.png" width="20px" height="20px" alt="" />
+                            <div id="detail_chinese_icon_B1" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img src="static/도문왕 양꼬치 복사.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+                        
+                        <div id="chi_C1">
+                            <img onclick="showDetail('detail_chinese_icon_C1')" style="position:absolute; left:170px; top:70px; cursor: pointer;" src="static/양꼬치.png" width="20px" height="20px" alt="" />
+                            <div id="detail_chinese_icon_C1" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img src="static/도문왕 양꼬치 복사.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="category-food">
+                    <div class="food-item">
+                        <a href="#" onclick="showDetail('detail_junk')" title=""><img src="static/junk.png"  class="food-image"/></a>
+                        <span>Junk</span>
+                    </div>
+                    <div id="detail_junk" style="position:absolute; left:40px; top:200px; visibility:hidden;">
+                        <div id="junk_A1">
+                            <img onclick="showDetail('detail_junk_icon_A1')" style="position:absolute; left:185px; top:201px; cursor: pointer;" src="static/이삭.png" width="20px" height="20px" alt="" />
+                            <div id="detail_junk_icon_A1" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img onclick="showDetail('detail_junk_path_A1')" style="cursor: pointer;" src="static/이삭 복사.png" width="200px" height="100px" alt="" />
+                                <div id="detail_junk_path_A1" style="position:fixed; left:-10px; top:367px; visibility:hidden;">
+                                    <svg id="svg">
+                                        <path stroke-width='5' fill='none' stroke="#F00" d="M 232,0 L 254,39 249,41" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="junk_A2">
+                            <img onclick="showDetail('detail_junk_icon_A2')" style="position:absolute; left:205px; top:235px; cursor: pointer;" src="static/과자점.png" width="20px" height="20px" alt="" />
+                            <div id="detail_junk_icon_A2" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img onclick="showDetail('detail_junk_path_A2')" style="cursor: pointer;" src="static/필동과자점 복사.png" width="200px" height="100px" alt="" />
+                                <div id="detail_junk_path_A2" style="position:fixed; left:-10px; top:367px; visibility:hidden;">
+                                    <svg id="svg">
+                                        <path stroke-width='5' fill='none' stroke="#F00" d="M 232,0 L 276,77 271,79"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="junk_C1">
+                            <img onclick="showDetail('detail_junk_icon_C1')" style="position:absolute;left:90px; top:320px; cursor: pointer;" src="static/치킨.png" width="20px" height="20px" alt="" />
+                            <div id="detail_junk_icon_C1" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img src="static/ready.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+
+                        <div id="junk_D1">
+                            <img onclick="showDetail('detail_junk_icon_D1')" style="position:absolute;left:65px; top:400px; cursor: pointer;" src="static/junk.png" width="20px" height="20px" alt="" />
+                            <div id="detail_junk_icon_D1" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img src="static/ready.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+
+                        <div id="junk_E1">
+                            <img onclick="showDetail('detail_junk_icon_E1')" style="position:absolute;left:25px; top:480px; cursor: pointer;" src="static/junk.png" width="20px" height="20px" alt="" />
+                            <div id="detail_junk_icon_E1" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img src="static/ready.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+
+                        <div id="junk_E2">
+                            <img onclick="showDetail('detail_junk_icon_E2')" style="position:absolute;left:15px; top:520px; cursor: pointer;" src="static/junk.png" width="20px" height="20px" alt="" />
+                            <div id="detail_junk_icon_E2" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img src="static/ready.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+
+                        <div id="junk_E3">
+                            <img onclick="showDetail('detail_junk_icon_E3')" style="position:absolute;left:65px; top:480px; cursor: pointer;" src="static/치킨.png" width="20px" height="20px" alt="" />
+                            <div id="detail_junk_icon_E3" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img src="static/ready.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="category-food">
+                    <div class="food-item">
+                        <a href="#" onclick="showDetail('detail_drink')" title=""><img src="static/소맥.png"  class="food-image"/></a>
+                        <span>Drink</span>
+                    </div>
+                    <div id="detail_drink" style="position:absolute; left:80px; top:350px; visibility:hidden;">
+                        <div id="drink_A1">
+                            <img onclick="showDetail('detail_drink_icon_A1')" style="position:absolute; left:130px; top:70px; cursor: pointer;" src="static/술집.png" width="10px" height="20px" alt="" />
+                            <div id="detail_drink_icon_A1" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img onclick="showDetail('detail_drink_path_A1')" style="cursor: pointer;" src="static/ready.png" width="200px" height="100px" alt="" />
+                                <div id="detail_drink_path_A1" style="position:fixed; left:-10px; top:367px; visibility:hidden;">
+                                    <svg id="svg">
+                                        <path stroke-width='5' fill='none' stroke="#F00" d="M 232,0 L 268,65 235,75 228,77 226,72" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="drink_A2">
+                            <img onclick="showDetail('detail_drink_icon_A2')" style="position:absolute; left:140px; top:90px; cursor: pointer;" src="static/술집.png" width="10px" height="20px" alt="" />
+                            <div id="detail_drink_icon_A2" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img onclick="showDetail('detail_drink_path_A2')" style="cursor: pointer;" src="static/술국집 복사.png" width="200px" height="100px" alt="" />
+                                <div id="detail_drink_path_A2" style="position:fixed; left:-10px; top:367px; visibility:hidden;">
+                                    <svg id="svg">
+                                        <path stroke-width='5' fill='none' stroke="#F00" d="M 232,0 L 268,65 235,75 235,82" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="drink_A3">
+                            <img onclick="showDetail('detail_drink_icon_A3')" style="position:absolute; left:190px; top:130px; cursor: pointer;" src="static/호프.png" width="10px" height="20px" alt="" />
+                            <div id="detail_drink_icon_A3" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img onclick="showDetail('detail_drink_path_A3')" style="cursor: pointer;" src="static/피노톡스 복사.png" width="200px" height="100px" alt="" />
+                                <div id="detail_drink_path_A3" style="position:fixed; left:-10px; top:367px; visibility:hidden;">
+                                    <svg id="svg">
+                                        <path stroke-width='5' fill='none' stroke="#F00" d="M 232,0 L 293,106 283,110 284,118" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="drink_B1">
+                            <img onclick="showDetail('detail_drink_icon_B1')" style="position:absolute; left:70px; top:130px; cursor: pointer;" src="static/술집.png" width="10px" height="20px" alt="" />
+                            <div id="detail_drink_icon_B1" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img src="static/ready.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+
+                        <div id="drink_B2">
+                            <img onclick="showDetail('detail_drink_icon_B2')" style="position:absolute; left:105px; top:120px; cursor: pointer;" src="static/술집.png" width="10px" height="20px" alt="" />
+                            <div id="detail_drink_icon_B2" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img src="static/ready.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+
+                        <div id="drink_B3">
+                            <img onclick="showDetail('detail_drink_icon_B3')" style="position:absolute; left:95px; top:140px; cursor: pointer;" src="static/술집.png" width="10px" height="20px" alt="" />
+                            <div id="detail_drink_icon_B3" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img src="static/ready.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+
+                        <div id="drink_B4">
+                            <img onclick="showDetail('detail_drink_icon_B4')" style="position:absolute; left:150px; top:205px; cursor: pointer;" src="static/술집.png" width="10px" height="20px" alt="" />
+                            <div id="detail_drink_icon_B4" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img src="static/ready.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+
+                        <div id="drink_C1">
+                            <img onclick="showDetail('detail_drink_icon_C1')" style="position:absolute; left:70px; top:160px; cursor: pointer;" src="static/술집.png" width="10px" height="20px" alt="" />
+                            <div id="detail_drink_icon_C1" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img src="static/ready.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+
+                        <div id="drink_C2">
+                            <img onclick="showDetail('detail_drink_icon_C2')" style="position:absolute; left:85px; top:180px; cursor: pointer;" src="static/술집.png" width="10px" height="20px" alt="" />
+                            <div id="detail_drink_icon_C2" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img src="static/ready.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+
+                        <div id="drink_C3">
+                            <img onclick="showDetail('detail_drink_icon_C3')" style="position:absolute; left:100px; top:195px; cursor: pointer;" src="static/술집.png" width="10px" height="20px" alt="" />
+                            <div id="detail_drink_icon_C3" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img src="static/ready.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="category-food">
+                    <div class="food-item">
+                        <a href="#" onclick="showDetail('detail_cafe')" title=""><img src="static/카페.png"  class="food-image"/></a>
+                        <span>Cafe</span>
+                    </div>
+
+                    <div id="detail_cafe" style="position: absolute; left:40px; top:200px; visibility:hidden;">
+                        <div id="cafe_A1">
+                            <img onclick="showDetail('detail_cafe_icon_A1')" style="position:absolute; left:210px; top:247px; cursor: pointer;" src="static/카페.png" width="20px" height="20px" alt="" />
+                            <div id="detail_cafe_icon_A1" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img onclick="showDetail('detail_cafe_path_A1')" style="cursor: pointer;" src="static/쥬씨 복사.png" width="200px" height="100px" alt="" />
+                                <div id="detail_cafe_path_A1" style="position:fixed; left:-10px; top:367px; visibility:hidden;">
+                                    <svg id="svg">
+                                        <path stroke-width='5' fill='none' stroke="#F00" d="M 232,0 L 280,84 275,87" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="cafe_A2">
+                            <img onclick="showDetail('detail_cafe_icon_A2')" style="position:absolute; left:240px; top:305px; cursor: pointer;" src="static/카페.png" width="20px" height="20px" alt="" />
+                            <div id="detail_cafe_icon_A2" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img onclick="showDetail('detail_cafe_path_A2')" style="cursor: pointer;" src="static/ready.png" width="200px" height="100px" alt="" />
+                                <div id="detail_cafe_path_A2" style="position:fixed; left:70px; top:367px; visibility:hidden;">
+                                    <svg id="svg" width="300px" height="500px">
+                                        <path stroke-width='5' fill='none' stroke="#F00" d="M 152,0 L 234,142 229,145"/>
+                                    </svg>
+                                </div>    
+                            </div>
+                        </div>
+
+                        <div id="cafe_A3">
+                            <img onclick="showDetail('detail_cafe_icon_A3')" style="position:absolute; left:200px; top:315px; cursor: pointer;" src="static/카페.png" width="20px" height="20px" alt="" />
+                            <div id="detail_cafe_icon_A3" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img onclick="showDetail('detail_cafe_path_A3')" style="cursor: pointer;" src="static/딸깍발이 복사.png" width="200px" height="100px" alt="" />
+                                <div id="detail_cafe_path_A3" style="position:fixed; left:70px; top:367px; visibility:hidden;">
+                                    <svg id="svg">
+                                        <path stroke-width='5' fill='none' stroke="#F00" d="M 152,0 L 225,128 210,132 214,139 180,146 180,153"/>
+                                    </svg>
+                                </div>    
+                            </div>
+                        </div>
+
+                        <div id="cafe_B1">
+                            <img onclick="showDetail('detail_cafe_icon_B1')" style="position:absolute; left:155px; top:315px; cursor: pointer;" src="static/카페.png" width="20px" height="20px" alt="" />
+                            <div id="detail_cafe_icon_B1" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img src="static/ready.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+
+                        <div id="cafe_B2">
+                            <img onclick="showDetail('detail_cafe_icon_B2')" style="position:absolute; left:160px; top:330px; cursor: pointer;" src="static/카페.png" width="20px" height="20px" alt="" />
+                            <div id="detail_cafe_icon_B2" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img src="static/ready.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+
+                        <div id="cafe_B3">
+                            <img onclick="showDetail('detail_cafe_icon_B3')" style="position:absolute; left:210px; top:370px; cursor: pointer;" src="static/카페.png" width="20px" height="20px" alt="" />
+                            <div id="detail_cafe_icon_B3" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img src="static/ready.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+
+                        <div id="cafe_D1">
+                            <img onclick="showDetail('detail_cafe_icon_D1')" style="position:absolute; left:130px; top:480px; cursor: pointer;" src="static/카페.png" width="20px" height="20px" alt="" />
+                            <div id="detail_cafe_icon_D1" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img src="static/ready.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+
+                        <div id="cafe_E1">
+                            <img onclick="showDetail('detail_cafe_icon_E1')" style="position:absolute; left:80px; top:490px; cursor: pointer;" src="static/카페.png" width="20px" height="20px" alt="" />
+                            <div id="detail_cafe_icon_E1" style="position:fixed; left:0px; top: 270px; visibility:hidden;">
+                                <img src="static/ready.png" width="200px" height="100px" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            
+
+            </ul>
+        </div>
+    </section>
+    <section id="map">
+        <div class="map-wrapper">
+            <div class="header-wrapper">
+                <div class="text-wrapper">
+                    <p class="title">충무로역</p>
+                    <p class="subtitle">chungmu-ro</p>
+                </div>
+                <img src="static/map-icon.png" class="map-icon"/>
+            </div>
+            <div class="map-image"></div>
+        </div>
+    </section>
+</body>
+
+</html>
